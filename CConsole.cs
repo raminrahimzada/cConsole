@@ -42,9 +42,9 @@ namespace raminrahimzada
             if (colors.Contains(ColorSeparator))
             {
                 var split = colors.Split(ColorSeparator);
-                var first = GetColor(split[0]);
-                var second = GetColor(split[1]);
-                return (first, second);
+                var foreground = GetColor(split[0]);
+                var background = GetColor(split[1]);
+                return (foreground, background);
             }
 
             var single = GetColor(colors);
