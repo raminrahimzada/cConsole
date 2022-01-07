@@ -77,7 +77,7 @@ namespace raminrahimzada
             }
         }
 
-        public static void WriteInternal(FormattableString f)
+        private static void WriteInternal(FormattableString f)
         {
             var str = f.ToString(This);
             var sb = new StringBuilder();
