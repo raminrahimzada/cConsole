@@ -33,7 +33,7 @@ namespace raminrahimzada
                 return consoleColor;
             }
 
-            throw new Exception($"ConsoleColors enum does not have a member named {color}");
+            throw new Exception($"System.ConsoleColor enum does not have a member named {color}");
         }
 
         private static (ConsoleColor? foreground, ConsoleColor? background)? GetColors(string colors)
